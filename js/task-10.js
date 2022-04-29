@@ -8,10 +8,10 @@ const destroyBoxes = () => {
     DivEl.removeChild(DivEl.firstChild);
   }
 };
-buttonCreate = document.querySelector('[data-create]');
-buttonDestroy = document.querySelector('[data-destroy]');
-count = document.querySelector('input');
-DivEl = document.querySelector('#boxes');
+const buttonCreate = document.querySelector('[data-create]');
+const buttonDestroy = document.querySelector('[data-destroy]');
+const count = document.querySelector('input');
+const DivEl = document.querySelector('#boxes');
 buttonCreate.addEventListener('click', () => {
   const DivAdd = [];
   let divHeight = 30;
