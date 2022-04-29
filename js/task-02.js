@@ -5,5 +5,5 @@ const elements = ingredients.map(ingredient => {
   elem.classList.add('item');
   return elem;
 });
-ulIngredients = document.querySelector('#ingredients');
+const ulIngredients = document.querySelector('#ingredients');
 ulIngredients.append(...elements);

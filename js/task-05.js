@@ -1,7 +1,7 @@
-inputEl = document.querySelector('#name-input');
-outputEl = document.querySelector('#name-output');
+const inputEl = document.querySelector('#name-input');
+const outputEl = document.querySelector('#name-output');
 inputEl.addEventListener('keyup', () => {
-  inputText = inputEl.value;
+  const inputText = inputEl.value;
   if (inputText === '') {
     outputEl.textContent = 'Anonymous';
   } else {

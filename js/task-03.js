@@ -17,5 +17,5 @@ const galleryElementHtml = Element => {
   return `<li class="gallery_item"> <a target="_blank" href="${url}"> <img src="${url}" alt="${alt}" width="300" height="200"> </a> <div class="desc">${alt}</div> </li>`;
 };
 const galleryElement = images.map(galleryElementHtml).join('');
-ulgallery = document.querySelector('ul');
+const ulgallery = document.querySelector('ul');
 ulgallery.insertAdjacentHTML('afterBegin', galleryElement);
