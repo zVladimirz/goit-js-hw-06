@@ -7,15 +7,20 @@ const destroyBoxes = () => {
   while (DivEl.firstChild) {
     DivEl.removeChild(DivEl.firstChild);
   }
+  divHeight = 30;
+  divWidth = 30;
+
 };
 const buttonCreate = document.querySelector('[data-create]');
 const buttonDestroy = document.querySelector('[data-destroy]');
 const count = document.querySelector('input');
 const DivEl = document.querySelector('#boxes');
+let divHeight = 30;
+let divWidth = 30;
+
+
 buttonCreate.addEventListener('click', () => {
   const DivAdd = [];
-  let divHeight = 30;
-  let divWidth = 30;
   for (let i = 1; i <= count.value; i += 1) {
     DivAdd.push(document.createElement('div'));
     DivAdd[DivAdd.length - 1].style.height = divHeight + 'px';
